@@ -16,6 +16,10 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Memories App');
+})
+
 
 //https://www.mongodb.com/cloud/atlas
 // const CONNECTION_URL = 'mongodb+srv://Saravanaa:ElonMusk%231@cluster0.7nwcnjm.mongodb.net/?retryWrites=true&w=majority'
